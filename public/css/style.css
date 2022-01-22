@@ -243,6 +243,7 @@ header .icons #menu-bars{
     line-height: 5rem;
     font-size: 2rem;
     color:var(--black);
+    left: 23rem;
 }
 
 .computadores .box-container .box .fa-eye:hover{
@@ -251,14 +252,14 @@ header .icons #menu-bars{
 }
 
 
-.computadores.box-container .box .fa-eye{
+/*.computadores.box-container .box .fa-eye{
     left:-15rem;
 }
 
 
 .computadores .box-container .box:hover .fa-eye{
     left:1.5rem;
-}
+}*/
 
 .computadores .box-container .box img{
     height:17rem;
@@ -267,7 +268,7 @@ header .icons #menu-bars{
 
 .computadores .box-container .box h3{
     color:var(--black);
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 }
 
 
@@ -377,9 +378,11 @@ header .icons #menu-bars{
     line-height: 5rem;
     text-align: center;
     font-size: 2rem;
-    background: #fff;
+    background: #eee;
     border-radius: 50%;
     color:var(--black);
+    left: 23rem;
+    
 }
 
 .componentes .box-container .box .image .fa-eye:hover{
