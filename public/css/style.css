@@ -288,6 +288,7 @@ header .icons #menu-bars{
 
 .sobre .row .image{
     flex:1 1 45rem;
+
 }
 
 .sobre .row .image img{ 
@@ -356,7 +357,7 @@ header .icons #menu-bars{
 }
 
 .componentes .box-container .box .image{
-    height: 25rem;
+    height: 30rem;
     width: 100%;
     padding:1.5rem;
     overflow: hidden;
@@ -397,17 +398,17 @@ header .icons #menu-bars{
 
 .componentes .box-container .box .content h3{
     color:var(--black);
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 }
 
-.componentes .box-container .box .content p{
+/*.componentes .box-container .box .content p{
     color:var(--light-color);
     font-size: 1.6rem;
     padding:.5rem 0;
     line-height: 1.5;
 }
 
-/*.componentes .box-container .box .content .price{
+.componentes .box-container .box .content .price{
     color:var(--green);
     margin-left: 1rem;
     font-size: 2.5rem;
