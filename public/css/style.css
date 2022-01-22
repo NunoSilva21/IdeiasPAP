@@ -371,7 +371,7 @@ header .icons #menu-bars{
 
 .componentes .box-container .box .image .fa-eye{
     position: absolute;
-    top:2.5rem; right: 2.5rem;
+    top:2.5rem; right: 2.5rem; left: 3rem;
     height: 5rem;
     width: 5rem;
     line-height: 5rem;
@@ -392,15 +392,6 @@ header .icons #menu-bars{
     padding-top: 0;
 }
 
-.componentes .box-container .box .content .stars{
-    padding-bottom: 1rem;
-}
-
-.componentes .box-container .box .content .stars i{
-   font-size: 1.7rem;
-   color:var(--green);
-}
-
 .componentes .box-container .box .content h3{
     color:var(--black);
     font-size: 2.5rem;
@@ -413,11 +404,12 @@ header .icons #menu-bars{
     line-height: 1.5;
 }
 
-.componentes .box-container .box .content .price{
+/*.componentes .box-container .box .content .price{
     color:var(--green);
     margin-left: 1rem;
     font-size: 2.5rem;
 }
+*/
 
 .faq .slide{
     padding:2rem;
