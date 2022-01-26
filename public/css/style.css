@@ -358,6 +358,24 @@ header .icons #menu-bars{
     padding:.5rem 0;
 }
 
+.ps5 .row .content p2{
+    color:var(--black);
+    font-size: 2rem;
+    padding:.5rem 0;
+}
+
+.ps5 .row .content h2{
+    color:var(--black);
+    font-size: 2rem;
+    padding:.5rem 0;
+    font-weight: bold;
+}
+.ps5 .row .content h1{
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
 .row .content p{
     color:var(--light-color);
     font-size: 1.5rem;
