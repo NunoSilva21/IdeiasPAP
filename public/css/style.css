@@ -243,7 +243,7 @@ header .icons #menu-bars{
     line-height: 5rem;
     font-size: 2rem;
     color:var(--black);
-    left: 23rem;
+    left: 30rem;
 }
 
 .computadores .box-container .box .fa-eye:hover{
@@ -331,7 +331,7 @@ header .icons #menu-bars{
     gap:1.5rem;
     align-items: center;
     background-color:	#c0c0c0;
-    margin: 10%;
+    margin: 1%;
     border-radius: 0.5%;
 }
 
@@ -362,11 +362,12 @@ header .icons #menu-bars{
     color:var(--black);
     font-size: 2rem;
     padding:.5rem 0;
+    line-height: 1;
 }
 
 .ps5 .row .content h2{
     color:var(--black);
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding:.5rem 0;
     font-weight: bold;
 }
@@ -380,7 +381,66 @@ header .icons #menu-bars{
     color:var(--light-color);
     font-size: 1.5rem;
     padding:.5rem 0;
-    line-height: 2;
+    line-height: 1.5;
+}
+
+.hpimage .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    align-items: center;
+    background-color: white;
+    margin: 1%;
+    border-radius: 0.5%;
+}
+
+.hpimage .row .imageHP{
+    flex:1 1 40rem;
+}
+
+.hpimage .row .imageHP img{ 
+    width: 50%;
+    opacity: 1;
+    margin-left: 20%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+
+}
+
+.hpimage .row .content{
+    flex:1 1 45rem;
+}
+
+.hpimage .row .content h3{
+    color:var(--black);
+    font-size: 4rem;
+    padding:.5rem 0;
+}
+
+.hpimage .row .content p2{
+    color:var(--black);
+    font-size: 2rem;
+    padding:.5rem 0;
+    line-height: 1;
+}
+
+.hpimage .row .content h2{
+    color:var(--black);
+    font-size: 1.5rem;
+    padding:.5rem 0;
+    font-weight: bold;
+}
+.hpimage .row .content h1{
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.row .content p{
+    color:var(--light-color);
+    font-size: 1.5rem;
+    padding:.5rem 0;
+    line-height: 1.5;
 }
 
 
@@ -423,7 +483,7 @@ header .icons #menu-bars{
     background: #eee;
     border-radius: 50%;
     color:var(--black);
-    left: 23rem;
+    left: 30rem;
     
 }
 
@@ -449,6 +509,7 @@ header .icons #menu-bars{
     line-height: 1.5;
 }
 */
+
 
 .faq .slide{
     padding:2rem;
