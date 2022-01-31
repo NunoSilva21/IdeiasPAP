@@ -36,14 +36,24 @@ section:nth-child(even){
     text-align: center;
     color:var(--green);
     font-size: 3rem;
-    padding-top: 1rem;
+    padding-top: 1px;
+    padding-bottom: 20px;
+}
+
+.topo {
+    text-align: center;
+    color:var(--green);
+    font-size: 3rem;
+    padding-top: 60px;
+    position: relative;
+    padding-bottom: 20px;
 }
 
 .heading{
     text-align: center;
     color:var(--black);
     font-size: 3rem;
-    padding-bottom: 2rem;
+    padding-bottom: 20px;
     text-transform: uppercase;
 }
 
@@ -245,7 +255,7 @@ header .icons #menu-bars{
     line-height: 5rem;
     font-size: 2rem;
     color:var(--black);
-    left: 23rem;
+    left: 22rem;
 }
 
 .computadores .box-container .box .fa-eye:hover{
@@ -314,9 +324,9 @@ header .icons #menu-bars{
     font-size: 1.5rem;
     padding:.5rem 0;
     line-height: 2;
-    text-align: center;
-    margin-right: 10%;
-}
+    text-align: relative;
+    
+} 
 
 .ps5 .row{
     display: flex;
@@ -358,7 +368,8 @@ header .icons #menu-bars{
     line-height: 1;
 }
 
-.ps5 .row .content h2{
+
+ps5 .row .content h2{
     color:var(--black);
     font-size: 1.5rem;
     padding:.5rem 0;
@@ -408,7 +419,7 @@ header .icons #menu-bars{
 
 .componentes .box-container .box .image .fa-eye{
     position: absolute;
-    top:2.5rem; right: 2.5rem; left: 3rem;
+    top:2rem; right: 2.5rem; left: 3rem;
     height: 5rem;
     width: 5rem;
     line-height: 5rem;
@@ -417,7 +428,7 @@ header .icons #menu-bars{
     background: #eee;
     border-radius: 50%;
     color:var(--black);
-    left: 23rem;
+    margin-left: 200px;
     
 }
 
@@ -495,52 +506,6 @@ header .icons #menu-bars{
     font-size: 1.5rem;
 }
 
-
-.hp1 {
-    background: #eee;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    gap: 2rem;
-  }
-  
-  .hp1 .image {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 42rem;
-            flex: 1 1 42rem;
-    padding-right: 5rem;
-    padding-bottom: 5rem;
-  }
-  
-  .hp1 .image img {
-    width: 100%;
-    -webkit-box-shadow: 4rem 4rem 0 rgba(0, 0, 0, 0.1);
-            box-shadow: 4rem 4rem 0 rgba(0, 0, 0, 0.1);
-  }
-  
-  .hp1 .content {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 42rem;
-            flex: 1 1 42rem;
-  }
-  
-  .hp1 .content h3 {
-    font-size: 3rem;
-    color: #219150;
-  }
-  
-  .hp1 .content p {
-    font-size: 1.5rem;
-    color: #10221b;
-    padding: 1rem 0;
-    line-height: 2;
-  }
-  
 
 
 .faq .slide{
@@ -685,7 +650,7 @@ header .icons #menu-bars{
     }
 
     header .navbar{
-        position: absolute;
+        position: fixed;
         top:100%; left:0; right:0;
         background:#fff;
         border-top: .1rem solid rgba(0,0,0,.2);
