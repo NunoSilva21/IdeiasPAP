@@ -1,3 +1,41 @@
+/*
+function init(){
+  getProdutos()
+
+}
+
+
+function getProdutos(){
+   const eye = document.getElementById('eye')
+   fetch('http://localhost:3000/componentes')
+   .then(res => res.json())
+   .then(data => {
+       for(let i=0; i<data.length; i++){
+           const op = 
+           `<option value="${data[i].idProdutos}">${data[i].descCurta}</option>`
+           eye.innerHTML += op
+       }
+   })
+   .catch()
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 let menu = document.querySelector('#menu-bars');

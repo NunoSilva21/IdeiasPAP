@@ -86,16 +86,14 @@ header{
 }
 
 header .logo{
-    color:var(--black);
+    margin-bottom:3rem ;
     font-size: 2.5rem;
     font-weight: bolder;
     height: 0.5rem;
     align-items: center;
+    color: var(--black);
 }
 
-header .logo i{
-    color:var(--green);
-}
 
 header .navbar a{
     font-size: 1.7rem;
@@ -328,6 +326,75 @@ header .icons #menu-bars{
     
 } 
 
+
+.pcs .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    align-items: center;
+    background-color:	#c0c0c0;
+    margin: 1%;
+    border-radius: 0.5%;
+    margin-top: 5%;
+} 
+
+.pcs .row .image{
+    flex:1 1 40rem;
+    
+}
+
+.pcs .row .image img{ 
+    width: 80%;
+    opacity: 1;
+    margin-left: 10%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    background-image: none;
+}
+
+.pcs .row .content{
+    flex:1 1 45rem;
+    padding: 0;
+}
+
+.pcs .row .content h3{
+    color:var(--black);
+    font-size: 4rem;
+    padding:.5rem 0;
+}
+
+.pcs .row .content p2{
+    color:var(--black);
+    font-size: 2rem;
+    padding:.5rem 0;
+    line-height: 1;
+}
+
+
+.pcs .row .content h2{
+    color:var(--black);
+    font-size: 1.5rem;
+    padding:.5rem 0;
+    font-weight: bold;
+}
+.pcs .row .content h1{
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.row .content p{
+    color:var(--light-color);
+    font-size: 1.5rem;
+    padding:.5rem 0;
+    line-height: 1.5;
+}
+
+
+.negrito b{
+    color: black;
+}
+
 .ps5 .row{
     display: flex;
     flex-wrap: wrap;
@@ -348,6 +415,7 @@ header .icons #menu-bars{
     margin-left: 20%;
     margin-top: 10%;
     margin-bottom: 10%;
+    background-color: #c0c0c0;
 
 }
 
@@ -369,7 +437,7 @@ header .icons #menu-bars{
 }
 
 
-ps5 .row .content h2{
+.ps5 .row .content h2{
     color:var(--black);
     font-size: 1.5rem;
     padding:.5rem 0;
@@ -507,54 +575,6 @@ ps5 .row .content h2{
 }
 
 
-
-.faq .slide{
-    padding:2rem;
-    box-shadow:var(--box-shadow);
-    border:.1rem solid rgba(0,0,0,.2);
-    border-radius: .5rem;
-    position: relative;    
-}
-
-.faq .slide .fa-quote-right{
-    position: absolute;
-    top:2rem; right:2rem;
-    font-size: 6rem;
-    color:#ccc;
-}
-
-.faq .slide .user{
-    display: flex;
-    gap:1.5rem;
-    align-items: center;
-    padding-bottom: 1.5rem;
-}
-
-.faq .slide .user img{
-    height: 7rem;
-    width: 7rem;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.faq .slide .user h3{
-    color:var(--black);
-    font-size: 2rem;
-    padding-bottom: .5rem;
-}
-
-.faq .slide .user i{
-    font-size: 1.3rem;
-    color:var(--green);
-}
-
-.faq .slide p{
-    font-size: 1.5rem;
-    line-height: 1.8;
-    color:var(--light-color);
-}
-
-
 .footer .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
@@ -617,7 +637,14 @@ ps5 .row .content h2{
 
 
 
+.content .p2{
 
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
 
 
 
