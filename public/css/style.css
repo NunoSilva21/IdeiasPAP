@@ -393,6 +393,70 @@ header .icons #menu-bars{
 }
 
 
+.GF2060 .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    align-items: center;
+    background-color:	#c0c0c0;
+    margin: 1%;
+    border-radius: 0.5%;
+    margin-top: 5%;
+} 
+
+.GF2060 .row .image{
+    flex:1 1 40rem;
+    
+}
+
+.GF2060 .row .image img{ 
+    width: 50%;
+    opacity: 1;
+    margin-left: 30%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    background-image: none;
+}
+
+.GF2060 .row .content{
+    flex:1 1 45rem;
+    padding: 0;
+}
+
+.GF2060 .row .content h3{
+    color:var(--black);
+    font-size: 4rem;
+    padding:.5rem 0;
+}
+
+.GF2060 .row .content p2{
+    color:var(--black);
+    font-size: 2rem;
+    padding:.5rem 0;
+    line-height: 1;
+}
+
+
+.GF2060 .row .content h2{
+    color:var(--black);
+    font-size: 1.5rem;
+    padding:.5rem 0;
+    font-weight: bold;
+}
+.GF2060 .row .content h1{
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.row .content p{
+    color:var(--light-color);
+    font-size: 1.5rem;
+    padding:.5rem 0;
+    line-height: 1.5;
+}
+
+
 .negrito b{
     color: black;
 }
