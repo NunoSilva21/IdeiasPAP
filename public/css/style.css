@@ -254,7 +254,7 @@ header .icons #menu-bars{
     line-height: 5rem;
     font-size: 2rem;
     color:var(--black);
-    left: 22rem;
+    margin-left: 60%;
 }
 
 .computadores .box-container .box .fa-eye:hover{
@@ -365,7 +365,7 @@ header .icons #menu-bars{
     padding:.5rem 0;
 }
 
-.pcs .row .content p2{
+.pcs .row .content p{
     color:var(--black);
     font-size: 2rem;
     padding:.5rem 0;
@@ -426,13 +426,13 @@ header .icons #menu-bars{
 .GF2060 .row .content h3{
     color:var(--black);
     font-size: 4rem;
-    padding:.5rem 0;
+    padding: 1rem 0;
+    margin-bottom: 15%;
 }
 
-.GF2060 .row .content p2{
+.GF2060 .row .content p{
     color:var(--black);
     font-size: 2rem;
-    padding:.5rem 0;
     line-height: 1;
 }
 
@@ -456,6 +456,131 @@ header .icons #menu-bars{
     line-height: 1.5;
 }
 
+.teclados .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    align-items: center;
+    background-color:	#c0c0c0;
+    margin: 1%;
+    border-radius: 0.5%;
+    margin-top: 5%;
+} 
+
+.teclados .row .image{
+    flex:1 1 40rem;
+    
+}
+
+.teclados .row .image img{ 
+    width: 100%;
+    opacity: 1;
+    margin-left: 5%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    background-image: none;
+}
+
+.teclados .row .content{
+    flex:1 1 45rem;
+    padding: 0;
+}
+
+.teclados .row .content h3{
+    color:var(--black);
+    font-size: 4rem;
+    padding: 1rem 0;
+    margin-bottom: 15%;
+}
+
+.teclados .row .content p{
+    color:var(--black);
+    font-size: 2rem;
+    line-height: 1;
+}
+
+
+.teclados .row .content h2{
+    color:var(--black);
+    font-size: 1.5rem;
+    padding:.5rem 0;
+    font-weight: bold;
+}
+.teclados .row .content h1{
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.row .content p{
+    color:var(--light-color);
+    font-size: 1.5rem;
+    padding:.5rem 0;
+    line-height: 1.5;
+}
+
+.ratos .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    align-items: center;
+    background-color:	#c0c0c0;
+    margin: 1%;
+    border-radius: 0.5%;
+    margin-top: 5%;
+} 
+
+.ratos .row .image{
+    flex:1 1 40rem;
+    
+}
+
+.ratos .row .image img{ 
+    width: 75%;
+    opacity: 1;
+    margin-left: 15%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    background-image: none;
+}
+
+.ratos .row .content{
+    flex:1 1 45rem;
+    padding: 0;
+}
+
+.ratos .row .content h3{
+    color:var(--black);
+    font-size: 4rem;
+    padding: 1rem 0;
+    margin-bottom: 15%;
+}
+
+.ratos .row .content p{
+    color:var(--black);
+    font-size: 2rem;
+    line-height: 1;
+}
+
+
+.ratos .row .content h2{
+    color:var(--black);
+    font-size: 1.5rem;
+    padding:.5rem 0;
+    font-weight: bold;
+}
+.ratos .row .content h1{
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.row .content p{
+    color:var(--light-color);
+    font-size: 1.5rem;
+    padding:.5rem 0;
+    line-height: 1.5;
+}
 
 .negrito b{
     color: black;
@@ -562,7 +687,7 @@ header .icons #menu-bars{
     background: #eee;
     border-radius: 50%;
     color:var(--black);
-    margin-left: 200px;
+    margin-left: 70%;
     
 }
 
@@ -621,7 +746,7 @@ header .icons #menu-bars{
     background: #eee;
     border-radius: 50%;
     color:var(--black);
-    left: 23rem;
+    margin-left: 70%;
     
 }
 
@@ -636,6 +761,64 @@ header .icons #menu-bars{
 }
 
 .componentes1 .box-container .box .content h3{
+    color:var(--black);
+    font-size: 1.5rem;
+}
+
+.perifericos .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+}
+
+.perifericos .box-container .box{
+    background: #fff;
+    border:.1rem solid rgba(0,0,0,.2);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);    
+}
+
+.perifericos .box-container .box .image{
+    height: 30rem;
+    width: 100%;
+    padding:1.5rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.perifericos .box-container .box .image img{
+    height: 100%;
+    width: 100%;
+    border-radius: .5rem;
+    object-fit: cover;
+}
+
+.perifericos .box-container .box .image .fa-eye{
+    position: absolute;
+    top:2rem; right: 2.5rem; left: 3rem;
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    background: #eee;
+    border-radius: 50%;
+    color:var(--black);
+    margin-left: 70%;
+    
+}
+
+.perifericos .box-container .box .image .fa-eye:hover{
+    background-color: var(--green);
+    color:#fff;
+}
+
+.perifericos .box-container .box .content{
+    padding:2rem;
+    padding-top: 0;
+}
+
+.perifericos .box-container .box .content h3{
     color:var(--black);
     font-size: 1.5rem;
 }
