@@ -21,8 +21,24 @@ function getProdutos(){
 
 
 
+var nomeError = document.getElementById('nome-error');
+var telemError = document.getElementById('telem-error');
+var emailError = document.getElementById('email-error');
+var enviarError = document.getElementById('enviar-error');
 
+function validateNome(){
+  var nome = document.getElementById('contact-nome').value;
 
+  if(nome.length ==0){
+    nomeError.innerHTML = 'Name is required'
+  }
+  if(!nome.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)){
+    nomeError.innerHTML = 'Write full name';
+    return false;
+}
+nomeError.innerHTML = '<i class="fas fa-check-circle"></i>';
+return true;
+}
 
 
 
@@ -72,13 +88,6 @@ window.onscroll = () =>{
 
 }
 
-/*document.querySelector('#search-icon').onclick = () =>{
-  document.querySelector('#search-form').classList.toggle('active');
-}
-
-document.querySelector('#close').onclick = () =>{
-  document.querySelector('#search-form').classList.remove('active');
-}*/
 
 var swiper = new Swiper(".home-slider", {
   spaceBetween: 30,
