@@ -1,14 +1,15 @@
-const express = require('express')
+const express = require('express');
 const path = require('path');
 const app = express()
-const connection = require('./dbconnection')
  
 //definir pasta public
 app.use(express.static('./public'))
 
+app.use(express.urlencoded({ extended: true }))
+app.use(express.json({ extended: false }))
 
 //definir as routas
-/*app.use('/componentes',require('./routes/componentesRoute'))*/
+app.use('/contactos',require('./routes/contactosRoute'))
 
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname,'./index.html'))

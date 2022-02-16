@@ -20,8 +20,8 @@ function getProdutos(){
 }*/
 
 
-
-var nomeError = document.getElementById('nome-error');
+//Script para validações
+/*var nomeError = document.getElementById('nome-error');
 var telemError = document.getElementById('telem-error');
 var emailError = document.getElementById('email-error');
 var enviarError = document.getElementById('enviar-error');
@@ -38,6 +38,46 @@ function validateNome(){
 }
 nomeError.innerHTML = '<i class="fas fa-check-circle"></i>';
 return true;
+}*/
+
+//Script da pagina contacto
+function enviarContactos(){
+  const pn = document.getElementById('contact-PrimNome').value
+  const un = document.getElementById('contact-UltNome').value
+  const email = document.getElementById('contact-email').value
+  const telem= document.getElementById('contact-telem').value
+  const msg = document.getElementById('contact-mensagem').value
+  /*let fd = new FormData()
+  fd.append('PrimNome',PrimNome)
+  fd.append('UltNome',UltNome)
+  fd.append('Email',Email)
+  fd.append('Telem',Telem)
+  fd.append('Mensagem',Mensagem)
+  console.log(fd)*/
+  const data = {
+    PrimNome: pn,
+    UltNome: un,
+    Email: email,
+    Telem: telem,
+    Mensagem: msg
+  }
+  var d = JSON.stringify(data)
+  console.log(d)
+  var options = {
+    method:'POST',
+    headers: {
+        'Content-type' : 'application/json'
+    },
+    body: d
+  }
+  fetch('http://localhost:3000/contactos',options)
+  .then(res => res.json())
+  .then(data => alert(data.text))
+  .catch((err) => {
+    console.log('Request failed', err.message)
+  });
+
+        
 }
 
 
@@ -50,6 +90,15 @@ return true;
 
 
 
+//script da pagina FAQS
+let accordions = document.querySelectorAll('.accordion-container .accordion');
+
+accordions.forEach(acco =>{
+    acco.onclick = () =>{
+        accordions.forEach(subAcco => { subAcco.classList.remove('active') });
+        acco.classList.add('active');
+    }
+})
 
 
 

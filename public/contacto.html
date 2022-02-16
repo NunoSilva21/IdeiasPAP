@@ -27,6 +27,7 @@
             <a href="periféricos.html">Periféricos</a>
             <a href="componentes.html">Componentes</a>
             <a href="sobre.html">Sobre</a>
+            <a href="faqs.html">FAQ</a>
             <a href="contacto.html">Contacto</a> 
     
         </nav>
@@ -50,18 +51,18 @@
         <!-- Form -->
         <div class="contact form">
             <h3>Contacte-nos</h3>
-            <form action="https://formsubmit.co/nunosanta15@gmail.com" method="post">
+            <form action="" method="">
                 <div class="formBox">
                 <div class="row50">
                 <div class="inputBox">
                     <input type="hidden" name="_template" value="table">
                 <span> Primeiro Nome</span> 
-                <input type="text" placeholder="Bruno" name="Nome" id="contact-name" onkeyup="validateNome()">
+                <input type="text" placeholder="Bruno" name="Nome" id="contact-PrimNome" onkeyup="validateNome()">
                 <span id="nome-error"> </span>
                     </div>
                     <div class="inputBox">
                         <span> Ultimo Nome</span> 
-                        <input type="text" placeholder="Ferreira" required name="Ultimo Nome" >
+                        <input type="text" placeholder="Ferreira" required name="Ultimo Nome" id="contact-UltNome" >
                         <span id="last-error"> </span>
                             </div>
                     </div>
@@ -69,23 +70,23 @@
             <div class="row50">
             <div class="inputBox">
                 <span> Email </span> 
-                <input type="text" placeholder="exemplo@email.com" required name="email" id="contacto-email">
+                <input type="text" placeholder="exemplo@email.com" required name="email" id="contact-email">
                 <span id="email-error"> </span>
                 </div>
             <div class="inputBox">
                 <span> Telemovel</span> 
-                <input type="text" placeholder="+351 923456789" name="telemovel" id="" required>
+                <input type="text" placeholder="+351 923456789" name="telemovel" id="contact-telem" required>
                 <span id="telem-error"> </span>
                 </div>
             </div>
                 <div class="row100">
                     <div class="inputBox">
                     <span> Mensagem </span> 
-                    <textarea placeholder="Escreva aqui.." name="mensagem"></textarea>
+                    <textarea placeholder="Escreva aqui.." name="mensagem" id="contact-mensagem"></textarea>
                     <span id="mensagem-error"> </span>
                     </div>
-                        <div class="inputBox">
-                           <button class="btn" type="submit" >send</button>
+                        <div class="inputBox" method="POST">
+                           <button onclick="enviarContactos()" class="btn" type="submit" >send</button>
                            <span id="enviar-error"> </span>
                         </div>
                 </div>

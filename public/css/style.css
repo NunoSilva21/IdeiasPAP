@@ -13,7 +13,6 @@
     box-sizing: border-box;
     text-decoration: none;
     outline: none; border:none;
-    text-transform: capitalize;
     transition: all .2s linear;
 }
 
@@ -707,6 +706,63 @@ header .icons #menu-bars{
     font-size: 1.5rem;
 }
 
+.HDD .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+}
+
+.HDD .box-container .box{
+    background: #fff;
+    border:.1rem solid rgba(0,0,0,.2);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);    
+}
+
+.HDD .box-container .box .image{
+    height: 30rem;
+    width: 100%;
+    padding:1.5rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.HDD .box-container .box .image img{
+    height: 100%;
+    width: 70%;
+    border-radius: .5rem;
+    margin-left: 10%;
+}
+
+.HDD .box-container .box .image .fa-eye{
+    position: absolute;
+    top:2rem; right: 2.5rem; left: 3rem;
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    background: #eee;
+    border-radius: 50%;
+    color:var(--black);
+    margin-left: 70%;
+    
+}
+
+.HDD .box-container .box .image .fa-eye:hover{
+    background-color: var(--green);
+    color:#fff;
+}
+
+.HDD .box-container .box .content{
+    padding:2rem;
+    padding-top: 0;
+}
+
+.HDD .box-container .box .content h3{
+    color:var(--black);
+    font-size: 1.5rem;
+}
 
 .componentes1 .box-container{
     display: grid;
@@ -824,6 +880,9 @@ header .icons #menu-bars{
     font-size: 1.5rem;
 }
 
+.footer {
+    background-color: #ddd;
+}
 
 .footer .box-container{
     display: grid;
