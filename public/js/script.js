@@ -40,6 +40,9 @@ nomeError.innerHTML = '<i class="fas fa-check-circle"></i>';
 return true;
 }*/
 
+
+
+
 //Script da pagina contacto
 function enviarContactos(){
   const pn = document.getElementById('contact-PrimNome').value
