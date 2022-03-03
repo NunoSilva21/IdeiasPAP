@@ -1,44 +1,4 @@
-/*
-function init(){
-  getProdutos()
 
-}
-
-
-function getProdutos(){
-   const eye = document.getElementById('eye')
-   fetch('http://localhost:3000/componentes')
-   .then(res => res.json())
-   .then(data => {
-       for(let i=0; i<data.length; i++){
-           const op = 
-           `<option value="${data[i].idProdutos}">${data[i].descCurta}</option>`
-           eye.innerHTML += op
-       }
-   })
-   .catch()
-}*/
-
-
-//Script para validações
-/*var nomeError = document.getElementById('nome-error');
-var telemError = document.getElementById('telem-error');
-var emailError = document.getElementById('email-error');
-var enviarError = document.getElementById('enviar-error');
-
-function validateNome(){
-  var nome = document.getElementById('contact-nome').value;
-
-  if(nome.length ==0){
-    nomeError.innerHTML = 'Name is required'
-  }
-  if(!nome.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)){
-    nomeError.innerHTML = 'Write full name';
-    return false;
-}
-nomeError.innerHTML = '<i class="fas fa-check-circle"></i>';
-return true;
-}*/
 
 
 
@@ -50,41 +10,65 @@ function enviarContactos(){
   const email = document.getElementById('contact-email').value
   const telem= document.getElementById('contact-telem').value
   const msg = document.getElementById('contact-mensagem').value
-  /*let fd = new FormData()
-  fd.append('PrimNome',PrimNome)
-  fd.append('UltNome',UltNome)
-  fd.append('Email',Email)
-  fd.append('Telem',Telem)
-  fd.append('Mensagem',Mensagem)
-  console.log(fd)*/
-  const data = {
-    PrimNome: pn,
-    UltNome: un,
-    Email: email,
-    Telem: telem,
-    Mensagem: msg
-  }
-  var d = JSON.stringify(data)
-  console.log(d)
-  var options = {
-    method:'POST',
-    headers: {
-        'Content-type' : 'application/json'
-    },
-    body: d
-  }
-  fetch('http://localhost:3000/contactos',options)
-  .then(res => res.json())
-  .then(data => alert(data.text))
-  .catch((err) => {
-    console.log('Request failed', err.message)
-  });
 
-        
+        if(telem.length >=10 && telem.lenght <9 ){
+          alert('insira um número válido')
+        }
+        else {
+          let i = 0
+          for(i; i<telem.length; i++){
+              let c = telem.charAt(i)
+              console.log(c)
+              if(isNaN(c)){
+                  alert('numero invalido')
+                  break
+              }       
+          }
+          console.log(i)
+          if(i == telem.length){
+              const telemInt = parseInt(telem)
+              console.log(telemInt)
+          }
+          
+        }
+
+
+        if(pn == ''||un == ''||email==''|| msg=='' || telem==''){
+              alert('Preencha todos os Campos!!')
+        }else{
+                /*let fd = new FormData()
+                fd.append('PrimNome',PrimNome)
+                fd.append('UltNome',UltNome)
+                fd.append('Email',Email)
+                fd.append('Telem',Telem)
+                fd.append('Mensagem',Mensagem)
+                console.log(fd)*/
+                const data = {
+                  PrimNome: pn,
+                  UltNome: un,
+                  Email: email,
+                  Telem: telem,
+                  Mensagem: msg
+                }
+                var d = JSON.stringify(data)
+                console.log(d)
+                var options = {
+                  method:'POST',
+                  headers: {
+                      'Content-type' : 'application/json'
+                  },
+                  body: d
+                }
+                fetch('http://localhost:3000/contactos',options)
+                .then(res => res.json())
+                .then(data => alert(data.text))
+                .catch((err) => {
+                  console.log('Request failed', err.Mensagem)
+                });
+
+          }  
+  
 }
-
-
-
 
 
 
@@ -105,7 +89,7 @@ accordions.forEach(acco =>{
 
 
 
-
+//Pagina
 let menu = document.querySelector('#menu-bars');
 let navbar = document.querySelector('.navbar');
 
@@ -178,7 +162,6 @@ var swiper = new Swiper(".review-slider", {
     },
   },
 });
-
 function loader(){
   document.querySelector('.loader-container').classList.add('fade-out');
 }
@@ -188,4 +171,3 @@ function fadeOut(){
 }
 
 window.onload = fadeOut;
-

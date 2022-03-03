@@ -8,7 +8,7 @@
 .section{
 	width: 100%;
 	min-height: 100vh;
-	background-color: #ddd;
+	background-color: white;
 }
 .container{
 	width: 80%;
@@ -73,6 +73,9 @@
 .content-section .social i:hover{
 	color:#3d3d3d;
 }
+
+
+
 @media screen and (max-width: 768px){
 	.container{
 	width: 80%;

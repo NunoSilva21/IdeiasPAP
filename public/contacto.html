@@ -25,12 +25,12 @@
         <a href="index.html" class="logo">NS_Informática<i class=""></i></a>
     
         <nav class="navbar">
-            <a class="active" href="index.html">home</a>
+            <a href="index.html">home</a>
             <a href="periféricos.html">Periféricos</a>
             <a href="componentes.html">Componentes</a>
             <a href="sobre.html">Sobre</a>
             <a href="faqs.html">FAQ</a>
-            <a href="contacto.html">Contacto</a> 
+            <a class="active" href="contacto.html">Contacto</a> 
     
         </nav>
     
@@ -59,37 +59,34 @@
                 <div class="inputBox">
                     <input type="hidden" name="_template" value="table">
                 <span> Primeiro Nome</span> 
-                <input type="text"  name="Nome" id="contact-PrimNome" onkeyup="validateNome()">
-                <span id="nome-error"> </span>
+                <input  type="nome"  name="nome" id="contact-PrimNome" required>
+            
                     </div>
                     <div class="inputBox">
                         <span> Ultimo Nome</span> 
-                        <input type="text"  required name="Ultimo Nome" id="contact-UltNome" >
-                        <span id="last-error"> </span>
+                        <input type="nome" name="Ultimo Nome" id="contact-UltNome" require >
+                        
                             </div>
                     </div>
 
             <div class="row50">
             <div class="inputBox">
                 <span> Email </span> 
-                <input type="text"  required name="email" id="contact-email">
-                <span id="email-error"> </span>
+                <input type="email"   name="email" id="contact-email" required>
+                
                 </div>
             <div class="inputBox">
-                <span> Telemovel</span> 
-                <input type="text"  name="telemovel" id="contact-telem" required>
-                <span id="telem-error"> </span>
+                <span> Telemóvel</span> 
+                <input type="number"  name="telemovel" id="contact-telem" required>
                 </div>
             </div>
                 <div class="row100">
                     <div class="inputBox">
                     <span> Mensagem </span> 
-                    <textarea placeholder="Escreva aqui.." name="mensagem" id="contact-mensagem"></textarea>
-                    <span id="mensagem-error"> </span>
+                    <textarea placeholder="Escreva aqui.." name="mensagem" id="contact-mensagem" required></textarea>
                     </div>
                         <div class="inputBox" method="POST">
-                           <button onclick="enviarContactos()" class="btn" type="submit" >send</button>
-                           <span id="enviar-error"> </span>
+                           <button onclick="enviarContactos()" class="btn" type="submit" >Enviar</button>
                         </div>
                 </div>
             </div>

@@ -10,10 +10,15 @@ enviarContactosRoute.post('/', (req,res) => {
         (err,result) => {
             if(err){
                 console.log(err)
+                res.json({
+                    type: 'error',
+                    msg: 'Ocorreu um erro. Tente mais tarde...'
+                })
             }
             else {
                 console.log(result)
-                res.json({text : 'Utilizador adicionado com sucesso!'})
+                //envio do email
+                res.json({text : 'Sua mensagem foi enviada com sucesso!'})
             }
         })
 

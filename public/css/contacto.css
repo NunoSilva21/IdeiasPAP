@@ -90,6 +90,18 @@ body {
 	width: 100%;
 }
 
+.formBox .row50 .inputBox .error-hint {
+	margin-top: 4px;
+}
+
+.formBox .row50 .inputBox .invalid {
+	border: 1px solid red;
+}
+
+.hidden {
+	display: none;
+}
+
 .inputBox span {
 	color: #333;
 	margin-top: 10px;
@@ -222,7 +234,7 @@ body {
 
 @media (max-width: 991px) {
 	body {
-		background: #03a9f5;
+		background: #ddd;
 	}
 	.contactUs{
 		padding: 20px;

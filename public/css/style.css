@@ -986,7 +986,7 @@ header .icons #menu-bars{
     }
 
     header .navbar{
-        position: fixed;
+        position: absolute;
         top:100%; left:0; right:0;
         background:#fff;
         border-top: .1rem solid rgba(0,0,0,.2);
@@ -1007,10 +1007,6 @@ header .icons #menu-bars{
         background:#eee;
     }
 
-    #search-form #search-box{
-        width:90%;
-        margin:0 1rem;
-    }
 
     .home .home-slider .slide .content h3{
         font-size: 5rem;
@@ -1024,12 +1020,12 @@ header .icons #menu-bars{
         font-size: 50%;
     }
 
-    .dishes .box-container .box img{
+    .componentes .box-container .box img{
         height:auto;
         width: 100%;
     }
 
-    .order form .inputBox .input{
+    .perifericos form .inputBox .input{
         width:100%;
     }
 
