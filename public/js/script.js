@@ -101,7 +101,7 @@ menu.onclick = () =>{
 let section = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header .navbar a');
 
-window.onscroll = () =>{
+/*window.onscroll = () =>{
 
   menu.classList.remove('fa-times');
   navbar.classList.remove('active');
@@ -122,7 +122,7 @@ window.onscroll = () =>{
 
   });
 
-}
+} */
 
 
 var swiper = new Swiper(".home-slider", {
