@@ -11,7 +11,7 @@ function enviarContactos(){
   const telem= document.getElementById('contact-telem').value
   const msg = document.getElementById('contact-mensagem').value
 
-        if(telem.length >=10 && telem.lenght <9 ){
+        if(telem.length != 9 ){
           alert('insira um número válido')
         }
         else {

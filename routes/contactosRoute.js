@@ -2,8 +2,11 @@ const express = require('express')
 const enviarContactosRoute = express.Router()
 const connection = require('../dbconnection')
 
+let { sendMail } = require ('../controllers/email.controller')
+
+
 enviarContactosRoute.post('/', (req,res) => {
-    console.log(req.body)
+    /*
     connection.query(
         'INSERT INTO contactos (PrimNome,UltNome,Email,Telem,Mensagem) VALUES (?,?,?,?,?)',
         [req.body.PrimNome,req.body.UltNome,req.body.Email,req.body.Telem,req.body.Mensagem],
@@ -17,11 +20,31 @@ enviarContactosRoute.post('/', (req,res) => {
             }
             else {
                 console.log(result)
-                //envio do email
-                res.json({text : 'Sua mensagem foi enviada com sucesso!'})
+                let emailData = {
+                    name: req.body.PrimNome,
+                    email: req.body.Email,
+                    subject: 'Obrigado pelo seu contacto.'
+                }
+                
+                sendMail(emailData, (error) => {
+                    if (error) return res.json ({ msg: 'Ocorreu um erro' })
+                    res.json({text : 'Sua mensagem foi enviada com sucesso!'})
+                  })
+               
             }
         })
-
+        */
+        let emailData = {
+            name: req.body.PrimNome,
+            email: req.body.Email,
+            subject: 'Obrigado pelo seu contacto.'
+        }
+        
+        sendMail(emailData, (error) => {
+            if (error) 
+                return res.json ({ msg: error })
+            res.json({text : 'Sua mensagem foi enviada com sucesso!'})
+          })
 
 })
 
